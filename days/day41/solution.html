@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 41 Solution - Event Loop</title>
+</head>
+<body>
+  <script>
+    // Solution
+    // Prediction: A, D, C, B
+    console.log('A');
+    setTimeout(() => console.log('B'), 0);
+    Promise.resolve().then(() => console.log('C'));
+    console.log('D');
+    // Actual output: A, D, C, B
+  </script>
+</body>
+</html>

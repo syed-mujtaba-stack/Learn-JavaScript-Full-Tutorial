@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.gallery-app {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 700px;
+  text-align: center;
+}
+.filters {
+  margin-bottom: 1rem;
+}
+.filters button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.filters button:hover {
+  background: #0056b3;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+#caption {
+  color: #fff;
+  margin-top: 1rem;
+}

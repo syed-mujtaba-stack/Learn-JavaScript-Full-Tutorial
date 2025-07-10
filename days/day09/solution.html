@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 9 Solution - Loops</title>
+</head>
+<body>
+  <h2>Day 9 Solution: Loops</h2>
+  <ol>
+    <li>Use a <b>for</b> loop to print numbers 1 to 10 in the console.</li>
+    <li>Use a <b>while</b> loop to print numbers 10 to 1 (reverse order).</li>
+    <li>Use a <b>for</b> loop to print only even numbers from 1 to 10.</li>
+  </ol>
+  <script>
+    // Solution
+    for (let i = 1; i <= 10; i++) {
+      console.log(i);
+    }
+    let n = 10;
+    while (n >= 1) {
+      console.log(n);
+      n--;
+    }
+    for (let i = 1; i <= 10; i++) {
+      if (i % 2 === 0) {
+        console.log(i);
+      }
+    }
+  </script>
+</body>
+</html>

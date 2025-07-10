@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 30 Solution - Async/Await</title>
+</head>
+<body>
+  <script>
+    // Solution
+    async function waitOneSecond() {
+      return new Promise(resolve => setTimeout(() => resolve('Done!'), 1000));
+    }
+    waitOneSecond().then(result => console.log(result));
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 14 Solution - Array Methods</title>
+</head>
+<body>
+  <h2>Day 14 Solution: Array Methods</h2>
+  <ol>
+    <li>Create an array <code>numbers</code> with values 1 to 5.</li>
+    <li>Use <b>map</b> to create a new array of each number squared.</li>
+    <li>Use <b>filter</b> to create a new array of even numbers only.</li>
+    <li>Use <b>find</b> to get the first number greater than 3.</li>
+    <li>Check if the number 4 is included in the original array.</li>
+  </ol>
+  <script>
+    // Solution
+    let numbers = [1, 2, 3, 4, 5];
+    let squares = numbers.map(n => n * n);
+    let evens = numbers.filter(n => n % 2 === 0);
+    let firstGt3 = numbers.find(n => n > 3);
+    let hasFour = numbers.includes(4);
+    console.log('Squares:', squares);
+    console.log('Evens:', evens);
+    console.log('First > 3:', firstGt3);
+    console.log('Includes 4:', hasFour);
+  </script>
+</body>
+</html>

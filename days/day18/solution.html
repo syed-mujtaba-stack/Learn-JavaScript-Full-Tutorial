@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 18 Solution - Date & Time</title>
+</head>
+<body>
+  <h2>Day 18 Solution: Date & Time</h2>
+  <ol>
+    <li>Create a <code>Date</code> object for the current date and time.</li>
+    <li>Print the current year, month, and day in the console.</li>
+    <li>Print the current hour and minute.</li>
+    <li>Print the date in local string format (e.g., <code>toLocaleDateString()</code>).</li>
+  </ol>
+  <script>
+    // Solution
+    let now = new Date();
+    console.log(now.getFullYear());
+    console.log(now.getMonth() + 1);
+    console.log(now.getDate());
+    console.log(now.getHours());
+    console.log(now.getMinutes());
+    console.log(now.toLocaleDateString());
+  </script>
+</body>
+</html>

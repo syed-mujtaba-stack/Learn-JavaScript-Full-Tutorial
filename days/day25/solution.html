@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 25 Solution - Local Storage</title>
+</head>
+<body>
+  <input type="text" id="username" placeholder="Enter username">
+  <button id="saveBtn">Save</button>
+  <button id="showBtn">Show</button>
+  <script>
+    // Solution
+    let saveBtn = document.getElementById('saveBtn');
+    let showBtn = document.getElementById('showBtn');
+    let input = document.getElementById('username');
+    saveBtn.addEventListener('click', function() {
+      localStorage.setItem('username', input.value);
+    });
+    showBtn.addEventListener('click', function() {
+      let user = localStorage.getItem('username');
+      alert(user);
+    });
+  </script>
+</body>
+</html>

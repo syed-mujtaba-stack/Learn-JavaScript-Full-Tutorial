@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 24 Solution - Timers</title>
+</head>
+<body>
+  <button id="startBtn">Start Timer</button>
+  <script>
+    // Solution
+    let btn = document.getElementById('startBtn');
+    btn.addEventListener('click', function() {
+      let count = 0;
+      let timer = setInterval(function() {
+        count++;
+        console.log('Tick');
+        if (count === 5) clearInterval(timer);
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

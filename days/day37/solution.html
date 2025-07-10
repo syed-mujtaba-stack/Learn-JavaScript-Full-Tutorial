@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 37 Solution - Closures</title>
+</head>
+<body>
+  <script>
+    // Solution
+    function createAdder(x) {
+      return function(y) {
+        return x + y;
+      }
+    }
+    let add3 = createAdder(3);
+    console.log(add3(10)); // 13
+  </script>
+</body>
+</html>

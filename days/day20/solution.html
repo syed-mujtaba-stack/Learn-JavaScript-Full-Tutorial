@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 20 Solution - DOM Basics</title>
+</head>
+<body>
+  <h2 id="main-title">Day 20 Solution: DOM Basics</h2>
+  <button class="btn">Click Me</button>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <script>
+    // Solution
+    let heading = document.getElementById('main-title');
+    heading.textContent = 'DOM Manipulated!';
+    let btn = document.querySelector('.btn');
+    btn.style.background = 'green';
+    let items = document.querySelectorAll('li');
+    items.forEach(item => console.log(item.textContent));
+  </script>
+</body>
+</html>

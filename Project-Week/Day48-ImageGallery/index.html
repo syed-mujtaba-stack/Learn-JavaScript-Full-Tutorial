@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery-app">
+    <h2>Image Gallery</h2>
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="animals">Animals</button>
+      <button data-filter="cities">Cities</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <div class="modal" id="modal">
+      <span class="close" id="closeModal">&times;</span>
+      <img class="modal-content" id="modalImg">
+      <div id="caption"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

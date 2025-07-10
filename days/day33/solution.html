@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 33 Solution - Static & Getters/Setters</title>
+</head>
+<body>
+  <script>
+    // Solution
+    class Calculator {
+      constructor() {
+        this._result = 0;
+      }
+      static multiply(a, b) {
+        return a * b;
+      }
+      get result() {
+        return this._result;
+      }
+    }
+    let calc = new Calculator();
+    calc._result = Calculator.multiply(4, 5);
+    console.log(calc.result); // 20
+  </script>
+</body>
+</html>

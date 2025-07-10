@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 13 Solution - Arrays</title>
+</head>
+<body>
+  <h2>Day 13 Solution: Arrays</h2>
+  <ol>
+    <li>Create an array <code>colors</code> with at least 3 color names.</li>
+    <li>Print the first and last color in the console.</li>
+    <li>Add a new color to the end and print the updated array.</li>
+    <li>Remove the first color and print the updated array.</li>
+  </ol>
+  <script>
+    // Solution
+    let colors = ['red', 'green', 'blue'];
+    console.log(colors[0]); // first
+    console.log(colors[colors.length - 1]); // last
+    colors.push('yellow');
+    console.log(colors);
+    colors.shift();
+    console.log(colors);
+  </script>
+</body>
+</html>

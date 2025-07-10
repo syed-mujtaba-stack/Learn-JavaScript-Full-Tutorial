@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 21 Solution - DOM Manipulation</title>
+</head>
+<body>
+  <h2 id="main-title">Day 21 Solution: DOM Manipulation</h2>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+  <img src="https://via.placeholder.com/100" alt="Placeholder">
+  <script>
+    // Solution
+    let heading = document.getElementById('main-title');
+    heading.textContent = 'DOM Updated!';
+    let img = document.querySelector('img');
+    img.alt = 'Updated Image';
+    let list = document.querySelector('ul');
+    let newItem = document.createElement('li');
+    newItem.textContent = 'Item 3';
+    list.appendChild(newItem);
+    list.removeChild(list.firstElementChild);
+  </script>
+</body>
+</html>

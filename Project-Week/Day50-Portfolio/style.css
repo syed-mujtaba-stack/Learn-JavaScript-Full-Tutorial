@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+header nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+#themeToggle {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+#themeToggle:hover {
+  background: #e0e0e0;
+}
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 2rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+}
+/* Dark Theme */
+body.dark {
+  background: #181818;
+  color: #f7f7f7;
+}
+body.dark header {
+  background: #222;
+  color: #fff;
+}
+body.dark #themeToggle {
+  background: #222;
+  color: #fff;
+}
+body.dark footer {
+  background: #007bff;
+  color: #fff;
+}

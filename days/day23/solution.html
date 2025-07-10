@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 23 Solution - Forms & Validation</title>
+</head>
+<body>
+  <form id="myForm">
+    <label>Name: <input type="text" id="name"></label>
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    // Solution
+    let form = document.getElementById('myForm');
+    let nameInput = document.getElementById('name');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (nameInput.value === '') {
+        alert('Name is required!');
+      } else {
+        alert('Form submitted!');
+      }
+    });
+  </script>
+</body>
+</html>

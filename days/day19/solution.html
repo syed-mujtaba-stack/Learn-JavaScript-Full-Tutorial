@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 19 Solution - Error Handling</title>
+</head>
+<body>
+  <h2>Day 19 Solution: Error Handling</h2>
+  <ol>
+    <li>Write a <b>try-catch</b> block that tries to parse an invalid JSON string (e.g., <code>'{name:Ali}'</code>).</li>
+    <li>Print <b>'Invalid JSON'</b> if an error occurs.</li>
+    <li>Add a <b>finally</b> block to print <b>'Done'</b> every time.</li>
+  </ol>
+  <script>
+    // Solution
+    try {
+      JSON.parse('{name:Ali}');
+    } catch (e) {
+      console.log('Invalid JSON');
+    } finally {
+      console.log('Done');
+    }
+  </script>
+</body>
+</html>

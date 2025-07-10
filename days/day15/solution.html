@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 15 Solution - Objects</title>
+</head>
+<body>
+  <h2>Day 15 Solution: Objects</h2>
+  <ol>
+    <li>Create an object <code>car</code> with properties <b>brand</b>, <b>model</b>, and <b>year</b>.</li>
+    <li>Print the <code>brand</code> and <code>year</code> in the console.</li>
+    <li>Add a new property <code>color</code> and set it to any value.</li>
+    <li>Delete the <code>model</code> property.</li>
+    <li>Print the updated object in the console.</li>
+  </ol>
+  <script>
+    // Solution
+    let car = {
+      brand: 'Toyota',
+      model: 'Corolla',
+      year: 2022
+    };
+    console.log(car.brand, car.year);
+    car.color = 'white';
+    delete car.model;
+    console.log(car);
+  </script>
+</body>
+</html>

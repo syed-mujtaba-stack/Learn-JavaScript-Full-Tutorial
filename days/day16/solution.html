@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 16 Solution - Object Methods</title>
+</head>
+<body>
+  <h2>Day 16 Solution: Object Methods</h2>
+  <ol>
+    <li>Create an object <code>student</code> with properties <b>name</b> and <b>marks</b>.</li>
+    <li>Add a method <code>showInfo</code> that prints <b>'Name: [name], Marks: [marks]'</b> using <code>this</code>.</li>
+    <li>Call the method and see the result in the console.</li>
+  </ol>
+  <script>
+    // Solution
+    let student = {
+      name: 'Sara',
+      marks: 88,
+      showInfo: function() {
+        console.log('Name:', this.name + ',', 'Marks:', this.marks);
+      }
+    };
+    student.showInfo();
+  </script>
+</body>
+</html>

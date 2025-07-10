@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 22 Solution - Events</title>
+</head>
+<body>
+  <button id="myBtn">Click Me</button>
+  <input type="text" id="myInput" placeholder="Type here...">
+  <script>
+    // Solution
+    let btn = document.getElementById('myBtn');
+    btn.addEventListener('click', function() {
+      alert('Button was clicked!');
+    });
+    let input = document.getElementById('myInput');
+    input.addEventListener('input', function() {
+      console.log(input.value);
+    });
+  </script>
+</body>
+</html>

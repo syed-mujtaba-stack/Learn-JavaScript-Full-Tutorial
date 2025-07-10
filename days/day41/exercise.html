@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 41 Exercise - Event Loop</title>
+</head>
+<body>
+  <script>
+    // 1. Predict the output order:
+    console.log('A');
+    setTimeout(() => console.log('B'), 0);
+    Promise.resolve().then(() => console.log('C'));
+    console.log('D');
+    // 2. Run the code to check your answer
+    // Write your prediction and result in comments
+  </script>
+</body>
+</html>

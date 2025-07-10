@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 26 Solution - JSON</title>
+</head>
+<body>
+  <script>
+    // Solution
+    let user = { name: 'Ali', age: 22 };
+    let jsonStr = JSON.stringify(user);
+    console.log(jsonStr);
+    let obj = JSON.parse(jsonStr);
+    console.log(obj.name);
+  </script>
+</body>
+</html>

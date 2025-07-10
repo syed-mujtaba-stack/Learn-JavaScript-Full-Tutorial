@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 34 Solution - Modules</title>
+</head>
+<body>
+  <!-- math.js -->
+  <script type="module" id="mathjs">
+    export function multiply(a, b) {
+      return a * b;
+    }
+  </script>
+  <!-- main file -->
+  <script type="module">
+    import { multiply } from './math.js';
+    console.log(multiply(3, 4)); // 12
+  </script>
+</body>
+</html>
